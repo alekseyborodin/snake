@@ -10,8 +10,27 @@ namespace snake
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hellow world!");
+            int x1 = 1;
+            int y1 = 3;
+            char sum1 = '*';
+
+            drow(x1, y1, sum1);
+
+            int x2 = 2;
+            int y2 = 5;
+            char sum1 = '#';
+
+            drow(x2, y2, sum2);
+
             Console.ReadKey();
+
+       
+        }
+
+        static void drow (int x,int y,char sum)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(sum);
         }
     }
 }
