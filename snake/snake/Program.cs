@@ -10,27 +10,24 @@ namespace snake
     {
         static void Main(string[] args)
         {
-            int x1 = 1;
-            int y1 = 3;
-            char sum1 = '*';
+            Point p1 = new Point();
+            p1.x = 1;
+            p1.y = 3;
+            p1.sum = '*';
+            p1.drow();
 
-            drow(x1, y1, sum1);
+            Point p2 = new Point();
+            p2.x = 3;
+            p2.y = 5;
+            p2.sum = '#';
+            p2.drow();
 
-            int x2 = 2;
-            int y2 = 5;
-            char sum1 = '#';
 
-            drow(x2, y2, sum2);
+           
 
             Console.ReadKey();
 
        
-        }
-
-        static void drow (int x,int y,char sum)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(sum);
         }
     }
 }
